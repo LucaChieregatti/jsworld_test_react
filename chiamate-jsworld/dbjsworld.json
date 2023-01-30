@@ -1,0 +1,53 @@
+{
+    "jsworldconf":[
+        {
+            "id": 1,
+            "events": {
+                "orario": "9.00 - 10.00",
+                "titolo": "Accelerating developer experience in Angular",
+                "descrizione": "In this talk we’ll explore new features in Angular and how the improved developer experience is lowering the friction for building great experiences on the web.",
+                "immagine": "https://images.jsworldconference.com/DSC_08474_361c4b181f.jpg?width=100"
+            }
+            
+        },
+        {
+        "id": 2,
+            "events": {
+                "orario": "10.00 - 10.30",
+                "titolo": "All About React 18",
+                "descrizione": "Meta Engineer Aashima will tell us everything about React 18. This talk will focus on the new features introduced in React18, like Concurrency, Automatic Batching, Transitions, New Suspense & Server components. Where you will learn about how to upgrade your app to React 18, learn about concurrent rendering, automatic batching, use new hooks introduced useTransition and useDeferredValue, Replace useEffect with Suspense, Build application using server components and Improve bundle size with React server components.",
+                "immagine": "https://images.jsworldconference.com/aashima_ahuja_a519e003cf.jpg?width=100"
+            }  
+        },
+        {
+        "id": 3,
+            "events": {
+                "orario": "11.00 - 11.40",
+                "titolo": "Building Age Of Empires 2 with React: Rise of the Browser",
+                "descrizione": "How better to learn about the capabilities of a technology than to do something it was expressly not designed for? What can we learn about the square peg as we mercilessly shove it into the triangular hole? In an attempt to rebuild Age of Empires 2 using React we'll learn about the limitations and possibilities of the tool we use everyday.",
+                "immagine": "https://images.jsworldconference.com/Zz_Ym_Cfi_Z_400x400_2_Joe_Hart_e1f62002a8.jpg?width=100"
+            }  
+        },
+        {
+        "id": 4,
+            "events": {
+                "orario": "11.40 - 12.00",
+                "titolo": "State of Storybook 7",
+                "descrizione": "Storybook 7 is our first major release in 2.5 years. During this time we’ve been working hard to bring you a new level of stability, performance improvements and features. We’re excited to share what we’ve been working on. - Refreshed UI and performance (We’ve also refreshed the core UI patterns with subtle visual refinements, UX tweaks, and faster load times) - Interaction testing and test-runner - Simpler setup and maintainability: first-class Vite support, new frameworks integrations like Next.js, etc.",
+                "immagine": "https://images.jsworldconference.com/yann_braga_square_e5634b3592.png?width=100"
+            }  
+        }
+    ],
+    "jsworldspeaker":[
+        {
+            "id": 1,
+            "tracks": {
+                "immagineprofilo": "da mettere",
+                "nome": "nome-test",
+                "specializzazione": "fallito",
+                "brevedescrizione": "test-breve-descrizione"
+                
+            } 
+        }
+    ]
+}
