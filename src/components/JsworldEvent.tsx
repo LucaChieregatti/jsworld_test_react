@@ -12,7 +12,9 @@ export const JsworldEvent = ({events}: JsworlsEventsProps)=>{
             marginBottom= '2em'>
             <Box
                 minH="400"
-                maxW="1000"
+                marginLeft='5em'
+                marginRight='5em'
+                textAlign='center'
                 backgroundColor= 'rgb(5,5,5)'
                 borderRadius= '15px'>
             <Text

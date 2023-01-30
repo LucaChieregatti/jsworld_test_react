@@ -34,7 +34,7 @@ const listaTracks=Array.from(data)
                 {listaTracks.map(item => <TracksMedium tracks={item} key={item.id}/>)};
             </VStack>
             <Text color='red' textShadow='4px 4px #000000' fontSize='4em' textAlign='center'>Speaker</Text>
-            <HStack spacing='2em'  margin='10em'>
+            <HStack justify='center' spacing='2em'>
                 {data2 && data2.map(item2 => <JsworldSpeaker speaker={item2} key={item2.id}/>)};
             </HStack>
             
