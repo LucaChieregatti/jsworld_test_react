@@ -1,21 +1,40 @@
-import { VStack } from '@chakra-ui/react';
+import { HStack, VStack, Box, Text } from '@chakra-ui/react';
 import { useEffect } from 'react';
-import { useEvents, useTracks } from '../hooks/useEventsTracks';
+import { useTracks, useSpeaker, useEvents } from '../hooks/useEventsTracks';
 import { Jsworld } from './Jsworld';
+import { JsworldSpeaker } from './JsworldSpeaker';
+import { JsworldEvent } from './JsworldEvent';
 
 export const JsworldList = () => {
-    const {data, execute} = useEvents();
-    // const {data2, execute2} = useTracks();
+    const {data3, execute3} = useEvents();
+    const {data, execute} = useTracks();
+    const {data2, execute2} = useSpeaker();
+    useEffect(()=>{
+        execute3();
+     }, [execute3]);
     useEffect(()=>{
         execute();
     }, [execute]);
-    // useEffect(()=>{
-    //     execute2();
-    // }, [execute2]);
+    useEffect(()=>{
+        execute2();
+     }, [execute2]);
+  
     return(
-        <VStack>
-            {data && data.map(item => <Jsworld events={item} key={item.id}/>)};
-            {/*data2 && data2.map(item2 => <Jsworld tracks={item2} key={item2.id}/>)*/};
-        </VStack>
+        <Box>
+            <VStack>
+                <Text color='red' textShadow='4px 4px #000000' fontSize='4em'>Events</Text>
+                {data3 && data3.map(item3 => <JsworldEvent events={item3} key={item3.id}/>)};
+            </VStack>
+            <VStack>
+                <Text color='red' textShadow='4px 4px #000000' fontSize='4em'>Tracks</Text>
+                {data && data.map(item => <Jsworld tracks={item} key={item.id}/>)};
+            </VStack>
+            <Text color='red' textShadow='4px 4px #000000' fontSize='4em'>Speaker</Text>
+            <HStack spacing='2em'  margin='10em'>
+                {data2 && data2.map(item2 => <JsworldSpeaker speaker={item2} key={item2.id}/>)};
+            </HStack>
+            
+        </Box>
+        
     )
 }

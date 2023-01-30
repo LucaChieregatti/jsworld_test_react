@@ -1,42 +1,47 @@
 import { Card, CardBody, HStack, Text, Image, VStack, Box } from '@chakra-ui/react';
-import { EventsDataType, TracksDataType } from '../types/types';
+import { TracksDataType } from '../types/types';
 
-type JsworlsEventsProps={
-    events:EventsDataType;
+type JsworlsTracksProps={
+    tracks:TracksDataType 
 }
 
-// type JsworlsTracksProps={
-//     tracks:TracksDataType;
-// }
-
-
-export const Jsworld = ({events}: JsworlsEventsProps, /*{tracks}: JsworlsTracksProps*/)=>{
+export const Jsworld = ({tracks}: JsworlsTracksProps)=>{
     return(
         <Card>
-            <CardBody>
+            <CardBody
+            marginBottom= '2em'>
             <Box
-            maxW="800"
-            backgroundColor= 'rgb(5,5,5)'
-            borderRadius= '15px'>
-                <HStack>
-                    
-                    <Text>{events.events.orario}</Text>
+                minH="200"
+                maxW="800"
+                backgroundColor= 'rgb(5,5,5)'
+                borderRadius= '15px'>
+                <HStack >
+                    <Text
+                        color='white'
+                        marginLeft='2em'
+                        marginRight='2em'>
+                        {tracks.tracks.orario}</Text>
                     <Image 
-                        src={events.events.immagine}
-                        maxWidth='100'
-                        maxHeight='100'
+                        src={tracks.tracks.immagine}
+                        maxWidth='200'
+                        maxHeight='200'
                         marginLeft= 'auto'
-                        marginRight= 'auto'
-                        marginBottom= '3em'/>
+                        marginRight= 'auto'/>
                     <VStack>
                         <Text
+                            marginTop= '1em'
+                            marginBottom= '1em'
                             color='red'
-                            as='b'>{events.events.titolo}</Text>
-                        <Text
-                        color='white'>{events.events.descrizione}</Text>
-                    </VStack>
-                    
-                   
+                            as='b'>
+                            {tracks.tracks.titolo}</Text>
+                        <Box>
+                            <Text
+                                color='white'
+                                marginLeft='2em'
+                                marginRight='2em'>
+                                {tracks.tracks.descrizione}</Text>
+                        </Box>
+                    </VStack> 
                 </HStack>
                 </Box>
             </CardBody>

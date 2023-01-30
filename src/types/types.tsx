@@ -1,6 +1,14 @@
 export type EventsDataType={
+    id: number,
+    events: {
+        titolo: string,
+        descrizione: string
+    }
+}
+
+export type TracksDataType={
         id: number,
-        events: {
+        tracks: {
             orario: string,
             titolo: string,
             descrizione: string,
@@ -8,9 +16,9 @@ export type EventsDataType={
         }
 }
 
-export type TracksDataType={
+export type SpeakerDataType={
         id: number,
-        tracks: {
+        speaker: {
             immagineprofilo: string,
             nome: string,
             specializzazione: string,

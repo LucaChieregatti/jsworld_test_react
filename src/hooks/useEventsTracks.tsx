@@ -1,12 +1,26 @@
 import React, {useCallback} from "react";
-import { getEvents, getTracks } from "../api/jsworldController";
+import { getEvents, getTracks, getSpeaker } from "../api/jsworldController";
+import { TracksDataType, SpeakerDataType, EventsDataType } from "../types/types";
 
 export const useEvents = () =>{
-    const[data, setData] = React.useState<any[]>();
-    const execute = async() => {
+    const[data3, setData3] = React.useState<EventsDataType[]>();
+    const execute3 = async() => {
         const events = await getEvents();
-        setData(events);
+        setData3(events);
         return events;
+    };
+    return{
+        data3,
+        execute3: useCallback(execute3, [])
+    };
+};
+
+export const useTracks = () =>{
+    const[data, setData] = React.useState<TracksDataType[]>();
+    const execute = async() => {
+        const tracks = await getTracks();
+        setData(tracks);
+        return tracks;
     };
     return{
         data,
@@ -14,12 +28,12 @@ export const useEvents = () =>{
     };
 };
 
-export const useTracks = () =>{
-    const[data2, setData2] = React.useState<any[]>();
+export const useSpeaker = () =>{
+    const[data2, setData2] = React.useState<SpeakerDataType[]>();
     const execute2 = async() => {
-        const tracks = await getTracks();
-        setData2(tracks);
-        return tracks;
+        const speaker = await getSpeaker();
+        setData2(speaker);
+        return speaker;
     };
     return{
         data2,
