@@ -16,7 +16,7 @@ export const useEvents = () =>{
 };
 
 export const useTracks = () =>{
-    const[data, setData] = React.useState<TracksDataType[]>();
+    const[data, setData] = React.useState<TracksDataType[]>({} as TracksDataType[]);
     const execute = async() => {
         const tracks = await getTracks();
         setData(tracks);

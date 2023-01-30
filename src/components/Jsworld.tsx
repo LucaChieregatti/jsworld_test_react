@@ -1,11 +1,11 @@
-import { Card, CardBody, HStack, Text, Image, VStack, Box } from '@chakra-ui/react';
-import { TracksDataType } from '../types/types';
+import { Box, Card, CardBody, HStack, Image, Text, VStack } from '@chakra-ui/react';
+import { SingleTrackType } from '../types/types';
 
 type JsworlsTracksProps={
-    tracks:TracksDataType 
+    track : SingleTrackType
 }
 
-export const Jsworld = ({tracks}: JsworlsTracksProps)=>{
+export const Jsworld = ({track}: JsworlsTracksProps)=>{
     return(
         <Card>
             <CardBody
@@ -20,9 +20,10 @@ export const Jsworld = ({tracks}: JsworlsTracksProps)=>{
                         color='white'
                         marginLeft='2em'
                         marginRight='2em'>
-                        {tracks.tracks.orario}</Text>
+                        {track.orario}</Text>
                     <Image 
-                        src={tracks.tracks.immagine}
+                        borderRadius= '15px'
+                        src={track.immagine}
                         maxWidth='200'
                         maxHeight='200'
                         marginLeft= 'auto'
@@ -33,13 +34,13 @@ export const Jsworld = ({tracks}: JsworlsTracksProps)=>{
                             marginBottom= '1em'
                             color='red'
                             as='b'>
-                            {tracks.tracks.titolo}</Text>
+                            {track.titolo}</Text>
                         <Box>
                             <Text
                                 color='white'
                                 marginLeft='2em'
                                 marginRight='2em'>
-                                {tracks.tracks.descrizione}</Text>
+                                {track.descrizione}</Text>
                         </Box>
                     </VStack> 
                 </HStack>

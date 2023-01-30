@@ -11,11 +11,13 @@ export const JsworldEvent = ({events}: JsworlsEventsProps)=>{
             <CardBody
             marginBottom= '2em'>
             <Box
-                minH="300"
-                maxW="800"
+                minH="400"
+                maxW="1000"
                 backgroundColor= 'rgb(5,5,5)'
                 borderRadius= '15px'>
             <Text
+                textShadow='3px 3px #8b0000'
+                fontSize='3em'
                 color='red'
                 marginTop='2em'
                 marginLeft='2em'

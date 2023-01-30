@@ -1,4 +1,4 @@
-export type EventsDataType={
+export type EventsDataType = {
     id: number,
     events: {
         titolo: string,
@@ -6,22 +6,27 @@ export type EventsDataType={
     }
 }
 
-export type TracksDataType={
-        id: number,
-        tracks: {
-            orario: string,
-            titolo: string,
-            descrizione: string,
-            immagine: string
-        }
+export type TracksDataType = {
+    id: number,
+    date : string,
+    tracks: SingleTrackType[] 
+
 }
 
-export type SpeakerDataType={
-        id: number,
-        speaker: {
-            immagineprofilo: string,
-            nome: string,
-            specializzazione: string,
-            brevedescrizione: string
-        }
+export type SingleTrackType = {
+    id: number,
+    orario: string,
+    titolo: string,
+    descrizione: string,
+    immagine: string
+}
+
+export type SpeakerDataType = {
+    id: number,
+    speaker: {
+        immagineprofilo: string,
+        nome: string,
+        specializzazione: string,
+        brevedescrizione: string
+    }
 }

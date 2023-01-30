@@ -1,53 +1,77 @@
 {
-    "jsworldevento":[
+    "jsworldevento": [
         {
             "id": 1,
             "events": {
                 "titolo": "#1 JAVASCRIPT CONFERENCE ON THE PLANET",
                 "descrizione": "A 3-day JavaScript Celebration together with 2139 JavaScript Developers. Packed with the Latest JavaScript Updates by Authors, Creators and Experts. 45 talks to stay on top of the latest topics like Vue3, Angular 15, React 18, Qwik, Vite, AuthZ, Demystifying Protocol Buffers and gRPC. Your chance get in touch with Creators and Maintainers from Vue, Astro, Nuxt, Angular, Vite and Storybook. You will be provided with technical updates on the largest and hottest technologies alongside case studies on how to tackle your developer challenges. Purchase your 1 day ticket valid on 8th February to be provided with a wide Variety of 15 unique pieces of content helping you make good choices as a JavaScript Developer Join for 3 Full Days on 8,9 and 10 February and also be part of the Largest and Most Special Vue Conference on the Planet, Vuejs Amsterdam attended by the Creator of Vite and Vue, Evan You and Core Team members bringing you the latest in Vue's Eco System."
-            }       
+            }
         }
     ],
-    "jsworldconf":[
+    "jsworldconf": [
         {
             "id": 1,
-            "tracks": {
-                "orario": "9.00 - 10.00",
-                "titolo": "Accelerating developer experience in Angular",
-                "descrizione": "In this talk we’ll explore new features in Angular and how the improved developer experience is lowering the friction for building great experiences on the web.",
-                "immagine": "https://images.jsworldconference.com/DSC_08474_361c4b181f.jpg?width=100"
-            }
-            
+            "date": "8 febbraio 2023",
+            "tracks": [
+                {
+                    "id": 1,
+                    "orario": "9.00 - 10.00",
+                    "titolo": "Accelerating developer experience in Angular",
+                    "descrizione": "In this talk we'll explore new features in Angular and how the improved developer experience is lowering the friction for building great experiences on the web.",
+                    "immagine": "https://images.jsworldconference.com/jecelyn_yeen_0730ca4482.jpg?width=100"
+                },
+                {
+                    "id": 2,
+                    "orario": "11.00 - 11.40",
+                    "titolo": "Building Age Of Empires 2 with React: Rise of the Browser",
+                    "descrizione": "How better to learn about the capabilities of a technology than to do something it was expressly not designed for? What can we learn about the square peg as we mercilessly shove it into the triangular hole? In an attempt to rebuild Age of Empires 2 using React we'll learn about the limitations and possibilities of the tool we use everyday.",
+                    "immagine": "https://images.jsworldconference.com/Zz_Ym_Cfi_Z_400x400_2_Joe_Hart_e1f62002a8.jpg?width=100"
+                }
+            ]
         },
         {
-        "id": 2,
-            "tracks": {
-                "orario": "10.00 - 10.30",
-                "titolo": "All About React 18",
-                "descrizione": "Meta Engineer Aashima will tell us everything about React 18. This talk will focus on the new features introduced in React18, like Concurrency, Automatic Batching, Transitions, New Suspense & Server components. Where you will learn about how to upgrade your app to React 18, learn about concurrent rendering, automatic batching, use new hooks introduced useTransition and useDeferredValue, Replace useEffect with Suspense, Build application using server components and Improve bundle size with React server components.",
-                "immagine": "https://images.jsworldconference.com/aashima_ahuja_a519e003cf.jpg?width=100"
-            }  
+            "id": 2,
+            "date": "9 Febbraio 2023",
+            "tracks": [
+                {
+                    "id": 1,
+                    "orario": "11.00 - 11.40",
+                    "titolo": "Building Age Of Empires 2 with React: Rise of the Browser",
+                    "descrizione": "How better to learn about the capabilities of a technology than to do something it was expressly not designed for? What can we learn about the square peg as we mercilessly shove it into the triangular hole? In an attempt to rebuild Age of Empires 2 using React we'll learn about the limitations and possibilities of the tool we use everyday.",
+                    "immagine": "https://images.jsworldconference.com/Zz_Ym_Cfi_Z_400x400_2_Joe_Hart_e1f62002a8.jpg?width=100"
+                },
+                {
+                    "id": 2,
+                    "orario": "11.40 - 12.00",
+                    "titolo": "State of Storybook 7",
+                    "descrizione": "Storybook 7 is our first major release in 2.5 years. During this time we’ve been working hard to bring you a new level of stability, performance improvements and features. We’re excited to share what we’ve been working on. - Refreshed UI and performance (We’ve also refreshed the core UI patterns with subtle visual refinements, UX tweaks, and faster load times) - Interaction testing and test-runner - Simpler setup and maintainability: first-class Vite support, new frameworks integrations like Next.js, etc.",
+                    "immagine": "https://images.jsworldconference.com/yann_braga_square_e5634b3592.png?width=100"
+                }
+            ]
         },
         {
-        "id": 3,
-            "tracks": {
-                "orario": "11.00 - 11.40",
-                "titolo": "Building Age Of Empires 2 with React: Rise of the Browser",
-                "descrizione": "How better to learn about the capabilities of a technology than to do something it was expressly not designed for? What can we learn about the square peg as we mercilessly shove it into the triangular hole? In an attempt to rebuild Age of Empires 2 using React we'll learn about the limitations and possibilities of the tool we use everyday.",
-                "immagine": "https://images.jsworldconference.com/Zz_Ym_Cfi_Z_400x400_2_Joe_Hart_e1f62002a8.jpg?width=100"
-            }  
-        },
-        {
-        "id": 4,
-            "tracks": {
-                "orario": "11.40 - 12.00",
-                "titolo": "State of Storybook 7",
-                "descrizione": "Storybook 7 is our first major release in 2.5 years. During this time we’ve been working hard to bring you a new level of stability, performance improvements and features. We’re excited to share what we’ve been working on. - Refreshed UI and performance (We’ve also refreshed the core UI patterns with subtle visual refinements, UX tweaks, and faster load times) - Interaction testing and test-runner - Simpler setup and maintainability: first-class Vite support, new frameworks integrations like Next.js, etc.",
-                "immagine": "https://images.jsworldconference.com/yann_braga_square_e5634b3592.png?width=100"
-            }  
+            "id": 3,
+            "date": "10 Febbraio 2023",
+            "tracks": [
+                {
+                    "id": 1,
+                    "orario": "12.00 - 13.00",
+                    "titolo": "How to Leverage mobile app tests for API tests. ",
+                    "descrizione": "APIs are the backbone of modern apps and issues in mobile apps can be from APIs. Join a webinar to learn how to test mobile apps on Sauce Labs Real Device Cloud and use the results for API testing and monitoring.",
+                    "immagine": "https://images.jsworldconference.com/yiminyang_7264911406.jfif?width=100"
+                },
+                {
+                    "id": 2
+                    ,
+                    "orario": "13.00 - 14.00",
+                    "titolo": "The tipping point of web development is here",
+                    "descrizione": "A comprehensive platform that allows developers to write and integrate databases, frontend, and backend code, without dealing with peripheral requirements. Wix leads to faster and more efficient web development while adhering to contemporary web design standards.",
+                    "immagine": "https://images.jsworldconference.com/1626245397105_25906778ea.jfif?width=100"
+                }
+            ]
         }
     ],
-    "jsworldspeaker":[
+    "jsworldspeaker": [
         {
             "id": 1,
             "speaker": {
@@ -55,8 +79,7 @@
                 "nome": "Chance Strickland",
                 "specializzazione": "Remix Core",
                 "brevedescrizione": "Sr. Software Engineer at Shopify. Passionate about design, user experience and accessibility with a"
-                
-            } 
+            }
         },
         {
             "id": 2,
@@ -65,8 +88,7 @@
                 "nome": "Jessy The",
                 "specializzazione": "Starting with Web3 ",
                 "brevedescrizione": "Frontend Developer with big interest in web3, blockchain (development) and the Metaverse"
-                
-            } 
+            }
         },
         {
             "id": 3,
@@ -75,8 +97,7 @@
                 "nome": "Jecelyn Yeen",
                 "specializzazione": "Chrome DevTools",
                 "brevedescrizione": "DevRel working on Chrome DevTools. Tends to talk about web development, tooling and testing."
-                
-            } 
+            }
         },
         {
             "id": 4,
@@ -85,8 +106,7 @@
                 "nome": "Aashima Ahuja",
                 "specializzazione": "Engineer at Meta | React 18",
                 "brevedescrizione": "Frontend Engineer at Meta talking about React. Frontend Content Creator based in Amsterdam. Ex-"
-                
-            } 
+            }
         },
         {
             "id": 5,
@@ -95,8 +115,7 @@
                 "nome": "Ashley Narcisse",
                 "specializzazione": "Apollo GraphQL team",
                 "brevedescrizione": "Experienced in creating web applications using both custom and popular JavaScript libraries "
-                
-            } 
+            }
         }
     ]
 }
