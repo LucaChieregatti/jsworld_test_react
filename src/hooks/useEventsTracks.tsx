@@ -1,29 +1,23 @@
 import React, {useCallback} from "react";
 import { getEvents, getTracks, getSpeaker } from "../api/jsworldController";
 import { TracksDataType, SpeakerDataType, EventsDataType } from "../types/types";
+import { useQuery } from "react-query";
+
 
 export const useEvents = () =>{
-    const[data3, setData3] = React.useState<EventsDataType[]>();
-    const execute3 = async() => {
-        const events = await getEvents();
-        setData3(events);
-        return events;
-    };
-    return{
-        data3,
-        execute3: useCallback(execute3, [])
-    };
+    const { data } = useQuery('listaEvents', getEvents)
+    return { data }
 };
 
 export const useTracks = () =>{
-    const[data, setData] = React.useState<TracksDataType[]>({} as TracksDataType[]);
+    const[data1, setData] = React.useState<TracksDataType[]>({} as TracksDataType[]);
     const execute = async() => {
         const tracks = await getTracks();
         setData(tracks);
         return tracks;
     };
     return{
-        data,
+        data1,
         execute: useCallback(execute, [])
     };
 };
